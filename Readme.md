@@ -22,4 +22,39 @@ This documentation will go through the steps required to simulate a database for
       });
 ```
 
-3.
+3. The next step will be to save the data entered in the collections. This can be done by using the following command.
+
+```
+    db.collection_name.save();
+```
+**Note**
+*In order to delete any document, use the following command with the correct parameters. In this example the document is deleted with their unique id.*
+
+```
+    db.collection_name.deleteOne({
+      <field_name>: <parameter>
+      });
+```
+
+*More parameters can be added in this query. Records will be deleted if the document matches the condition*
+
+4. Follow steps 2-3 for every new collections and their respective documents. After you're done with populating the database, you can view them all with the **find()** function. The usage of it given below:
+
+```
+    db.collection_name.find();
+```
+
+This will give out all the documents present in the current collection. If you want to fetch the data with some constraints, you can specify them in the **find()** function like this:
+
+```
+    db.collection_name.find({<field_name>: <parameter>});
+```
+
+**Note**
+*Another way of showing the data is by giving the output in JSON format. We can do that by using the pretty() function*
+
+```
+   db.collection_name.find().pretty();
+```
+
+5.
