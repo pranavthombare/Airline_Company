@@ -23,30 +23,147 @@ pilot_record = {}
 flag = True
 
 # loop for data input
-while (flag):
+#while (flag):
    # ask for input
-   pilot_name,pilot_address,pilot_contact,pilot_email,pilot_status,pilot_dot = raw_input("Enter Pilot details: ").split(',,')
+   #pilot_name,pilot_address,pilot_contact,pilot_email,pilot_status,pilot_dot = raw_input("Enter Pilot details: ").split(',,')
    # place values in dictionary
-   pilot_record = {'name':pilot_name,'address':pilot_address, 'contact':pilot_contact,'email':pilot_email,'emp_status':pilot_status,'date_last_test':pilot_dot}
+   #pilot_record = {'name':pilot_name,'address':pilot_address, 'contact':pilot_contact,'email':pilot_email,'emp_status':pilot_status,'date_last_test':pilot_dot}
    # insert the record
-   db.insert(pilot_record)
+   #db.insert(pilot_record)
    # should we continue?
-   flag = input('Enter another record? ')
-   if (flag[0].upper() == 'N'):
-      flag = False
+   #flag = input('Enter another record? ')
+   #if (flag[0].upper() == 'N'):
+      #flag = False
 
 # find all documents
-results = db.find()
+#results = db.find()
 
-print()
-print('+-+-+-+-+-+-+-+-+-+-+-+-+-+-')
+#print()
+#print('+-+-+-+-+-+-+-+-+-+-+-+-+-+-')
 
 # display documents from collection
-for record in results:
+#for record in results:
 # print out the document
-    print(record['name'] + ',',record['address'] + ',',record['contact'] + ',',record['email'] + ',',record['emp_status'] + ',',record['date_last_test'])
+    #print(record['name'] + ',',record['address'] + ',',record['contact'] + ',',record['email'] + ',',record['emp_status'] + ',',record['date_last_test'])
 
-print()
+#print()
+
+pilot1= {
+        'name':
+        'address':
+        'contact':
+        'email':
+        'empl_status':{
+            'date_of_join':
+            'department':
+            'status':
+        }
+        'last_flight':
+        'last_test':
+}
+
+
+pilot2= {
+        'name':
+        'address':
+        'contact':
+        'email':
+        'empl_status':{
+            'date_of_join':
+            'department':
+            'status':
+        }
+        'last_flight':
+        'last_test':
+}
+
+pilot3= {
+        'name':
+        'address':
+        'contact':
+        'email':
+        'empl_status':{
+            'date_of_join':
+            'department':
+            'status':
+        }
+        'last_flight':
+        'last_test':
+}
+
+pilot4= {
+        'name':
+        'address':
+        'contact':
+        'email':
+        'empl_status':{
+            'date_of_join':
+            'department':
+            'status':
+        }
+        'last_flight':
+        'last_test':
+}
+
+pilot5= {
+        'name':
+        'address':
+        'contact':
+        'email':
+        'empl_status':{
+            'date_of_join':
+            'department':
+            'status':
+        }
+        'last_flight':
+        'last_test':
+}
+
+pilot6= {
+        'name':
+        'address':
+        'contact':
+        'email':
+        'empl_status':{
+            'date_of_join':
+            'department':
+            'status':
+        }
+        'last_flight':
+        'last_test':
+}
+
+pilot7= {
+        'name':
+        'address':
+        'contact':
+        'email':
+        'empl_status':{
+            'date_of_join':
+            'department':
+            'status':
+        }
+        'last_flight':
+        'last_test':
+}
+
+
+pilot8= {
+        'name':'Anket Dhoble'
+        'address':''
+        'contact':
+        'email':
+        'empl_status':{
+            'date_of_join':
+            'department':
+            'status':
+        }
+        'last_flight':
+        'last_test':
+}
+
+
+db.insert(pilot_record)
 
 # close the connection to MongoDB
 connection.close()
