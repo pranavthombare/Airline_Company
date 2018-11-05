@@ -1,6 +1,6 @@
 **Documentation for Airline management system**
 
-This documentation will go through the steps required to simulate a database for any airline company.
+This documentation will go through the steps required to simulate a database for any airline company. Before that here are some basic commands to get through MongoDB:
 
 1. The first step is to create a database which can done by using this command
 
@@ -56,5 +56,3 @@ This will give out all the documents present in the current collection. If you w
 ```
    db.collection_name.find().pretty();
 ```
-
-5.
