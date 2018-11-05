@@ -25,7 +25,7 @@ flag = True
 # loop for data input
 while (flag):
    # ask for input
-   pilot_name,pilot_address,pilot_contact,pilot_email,pilot_status,pilot_dot = raw_input("Enter Pilot details: ").split(',')
+   pilot_name,pilot_address,pilot_contact,pilot_email,pilot_status,pilot_dot = raw_input("Enter Pilot details: ").split(',,')
    # place values in dictionary
    pilot_record = {'name':pilot_name,'address':pilot_address, 'contact':pilot_contact,'email':pilot_email,'emp_status':pilot_status,'date_last_test':pilot_dot}
    # insert the record
@@ -36,7 +36,7 @@ while (flag):
       flag = False
 
 # find all documents
-results = db.find().pretty()
+results = db.find()
 
 print()
 print('+-+-+-+-+-+-+-+-+-+-+-+-+-+-')
@@ -44,7 +44,7 @@ print('+-+-+-+-+-+-+-+-+-+-+-+-+-+-')
 # display documents from collection
 for record in results:
 # print out the document
-    print(record['name'] + ',',record['address'] + ',',record['contact'] + ',',record['email'] + ',',record['emp_status'] + ',',record['pilot_status'] + ',',record['date_last_test'])
+    print(record['name'] + ',',record['address'] + ',',record['contact'] + ',',record['email'] + ',',record['emp_status'] + ',',record['date_last_test'])
 
 print()
 
