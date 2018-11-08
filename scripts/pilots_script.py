@@ -35,22 +35,9 @@ flag = True
    #if (flag[0].upper() == 'N'):
       #flag = False
 
-# find all documents
-#results = db.find()
-
-#print()
-#print('+-+-+-+-+-+-+-+-+-+-+-+-+-+-')
-
-# display documents from collection
-#for record in results:
-# print out the document
-    #print(record['name'] + ',',record['address'] + ',',record['contact'] + ',',record['email'] + ',',record['emp_status'] + ',',record['date_last_test'])
-
-#print()
-
 pilot1= {
-        'name':
-        'address':
+        'name':'Rohit Sharma'
+        'address':''
         'contact':
         'email':
         'empl_status':{
@@ -64,7 +51,7 @@ pilot1= {
 
 
 pilot2= {
-        'name':
+        'name':'John Cena'
         'address':
         'contact':
         'email':
@@ -78,7 +65,7 @@ pilot2= {
 }
 
 pilot3= {
-        'name':
+        'name':'Vin Diesel'
         'address':
         'contact':
         'email':
@@ -92,7 +79,7 @@ pilot3= {
 }
 
 pilot4= {
-        'name':
+        'name':'Donald Trump'
         'address':
         'contact':
         'email':
@@ -106,7 +93,7 @@ pilot4= {
 }
 
 pilot5= {
-        'name':
+        'name':'Nicholas Cage'
         'address':
         'contact':
         'email':
@@ -120,7 +107,7 @@ pilot5= {
 }
 
 pilot6= {
-        'name':
+        'name':'Jaikiran Sawant'
         'address':
         'contact':
         'email':
@@ -134,7 +121,7 @@ pilot6= {
 }
 
 pilot7= {
-        'name':
+        'name': 'Suruchi Rastogi'
         'address':
         'contact':
         'email':
