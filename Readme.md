@@ -59,5 +59,5 @@ This will give out all the documents present in the current collection. If you w
 To use this project just run the script from the folders using the following command:
 
 ```
-    mongo < scripts/<scriptname>.js
+    mongo <scripts/<scriptname>.js
 ```
